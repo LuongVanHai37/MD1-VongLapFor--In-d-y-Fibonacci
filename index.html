@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   const number = parseInt(prompt('Enter the number of terms: '));
+   let n1 = 0;
+   let n2 = 1;
+   let soFibonacci = n1 + n2;
+   // while (soFibonacci <= number + 1){
+   //     n1 = n2;
+   //     n2 = soFibonacci;
+   //     soFibonacci = n1 + n2;
+   //     console.log('so=======',soFibonacci);
+   //           document.write(n1);
+   // }
+   for (let i = 0; i <= number; i++) { // vi dụ dãy Fibonacci của 3
+       n1 = n2; // n1 = 1
+       console.log('n1----',n1);
+       n2 = soFibonacci; //  soFibonacci = n1+ n2 = 0 + 1
+       console.log('n2------',n2)
+       soFibonacci = n1 + n2; // 1 + 1 = 2
+       console.log('soFibonacci---',soFibonacci)
+       document.write(' ' + n1);
+       console.log(n1);
+   }
+</script>
+</body>
+</html>
